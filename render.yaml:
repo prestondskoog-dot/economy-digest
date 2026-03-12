@@ -1,0 +1,6 @@
+services:
+  - type: worker
+    name: economy-digest
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python economy_digest.py
